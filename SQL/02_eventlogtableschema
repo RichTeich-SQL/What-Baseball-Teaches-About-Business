@@ -1,0 +1,51 @@
+USE [Baseball]
+GO
+
+/****** Object:  Table [dbo].[tblEventLog2025]    Script Date: 4/21/2026 11:51:43 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tblEventLog2025](
+	[HTEAMDATE] [nvarchar](25) NOT NULL,
+	[VISITORS] [nvarchar](25) NOT NULL,
+	[INNING] [tinyint] NOT NULL,
+	[HALF] [bit] NOT NULL,
+	[OUTS] [tinyint] NOT NULL,
+	[BALLS] [tinyint] NOT NULL,
+	[STRIKES] [tinyint] NOT NULL,
+	[SCORE_V] [smallint] NULL,
+	[SCORE_H] [smallint] NULL,
+	[BATTER] [nvarchar](25) NOT NULL,
+	[BATS] [nvarchar](25) NOT NULL,
+	[PITCHER] [nvarchar](25) NOT NULL,
+	[THROWS] [nvarchar](25) NOT NULL,
+	[ON1ST] [nvarchar](25) NULL,
+	[ON2ND] [nvarchar](25) NULL,
+	[ON3RD] [nvarchar](25) NULL,
+	[RESULT] [nvarchar](50) NOT NULL,
+	[LEADOFF] [bit] NOT NULL,
+	[PINCH_HIT] [bit] NOT NULL,
+	[DEF_POS] [tinyint] NOT NULL,
+	[LINEUP] [tinyint] NOT NULL,
+	[E_TYPE] [tinyint] NOT NULL,
+	[BAT_EVENT] [bit] NOT NULL,
+	[AB] [bit] NOT NULL,
+	[HITVALUE] [tinyint] NOT NULL,
+	[SAC_HIT] [nvarchar](50) NOT NULL,
+	[SAC_FLY] [bit] NOT NULL,
+	[OUTSONPLAY] [tinyint] NOT NULL,
+	[RBI] [tinyint] NOT NULL,
+	[DP] [bit] NOT NULL,
+	[TP] [bit] NOT NULL,
+	[Field32] [bit] NULL,
+	[BATDEST] [tinyint] NOT NULL,
+	[ON1_DEST] [tinyint] NOT NULL,
+	[ON2_DEST] [tinyint] NOT NULL,
+	[ON3_DEST] [tinyint] NOT NULL
+) ON [PRIMARY]
+GO
+
+
